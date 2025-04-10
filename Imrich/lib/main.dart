@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Image(
-                        image: AssetImage("images/diamond.png"),
+                        image: AssetImage("assets/diamond.png"),
                       )
                     ]))));
   }

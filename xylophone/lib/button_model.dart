@@ -4,10 +4,7 @@ class ButtonModel {
   final String audioName;
   final Color color;
 
-  const ButtonModel({
-    required this.audioName,
-    required this.color,
-  });
+  const ButtonModel({required this.audioName, required this.color});
 }
 
 const allButtons = [

@@ -32,16 +32,17 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: buttons
-              .map(
-                (button) => XylophoneButton(
-                  color: button.color,
-                  onPressed: () async {
-                    await player.play(AssetSource('${button.audioName}.wav'));
-                  },
-                ),
-              )
-              .toList(),
+          children:
+              buttons
+                  .map(
+                    (button) => XylophoneButton(
+                      color: button.color,
+                      onPressed: () {
+                        player.play(AssetSource('${button.audioName}.wav'));
+                      },
+                    ),
+                  )
+                  .toList(),
         ),
       ),
     );

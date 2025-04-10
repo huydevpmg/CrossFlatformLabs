@@ -45,7 +45,7 @@ class _BallState extends State<Ball> {
     return Center(
       child: TextButton(
         onPressed: updateImage,
-        child: Image.asset('images/ball$ballNumber.png'),
+        child: Image.asset('assets/images/ball$ballNumber.png'),
         // 'images/ball1.png '),
       ),
     );

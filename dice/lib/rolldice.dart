@@ -10,11 +10,11 @@ class Rolldice extends StatefulWidget {
 }
 
 class _RolldiceState extends State<Rolldice> {
-  var activeDice = 'images/1.png';
+  var activeDice = 'assets/images/1.png';
   void rolling() {
     var random = Random().nextInt(6) + 1;
     setState(() {
-      activeDice = 'images/$random.png';
+      activeDice = 'assets/images/$random.png';
     });
   }
 
